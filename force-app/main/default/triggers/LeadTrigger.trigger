@@ -10,6 +10,6 @@ trigger LeadTrigger on Lead (Before Insert, Before Update, After Insert, After U
    List<Lead> newleadlist = trigger.new;
    for (lead eachLead : newleadlist) {
        System.debug( eachLead.lastName + 'is created successfully');  
-   }
+   }// trigger
 }
 }
